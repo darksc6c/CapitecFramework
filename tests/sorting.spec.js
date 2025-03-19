@@ -1,9 +1,6 @@
 import { test, expect } from '../src/fixtures/testFixtures.js';
 import { priceToNumber } from '../src/utils/helpers.js';
-import faker from 'faker';
-import { formatDate } from '../src/utils/helpers.js';
-import { generateRandomString } from '../src/utils/helpers.js';
-imr
+
 
 test.describe('Product Sorting Tests', () => {
     test.beforeEach(async ({ page, loginPage, testData }) => {

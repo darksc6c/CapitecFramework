@@ -129,3 +129,13 @@ To add new tests:
 - Make tests independent of each other
 - Add meaningful assertions
 - Use proper waiting strategies 
+
+
+
+
+If errors:
+
+npm config set strict-ssl false
+ 
+$env:NODE_TLS_REJECT_UNAUTHORIZED=0
+ 

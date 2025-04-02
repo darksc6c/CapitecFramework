@@ -6,7 +6,7 @@ We'll build a simple test that:
 2. Clicks on category
 3. Select a product
 4. Adds it to cart
-5. Verifies it's in the cart
+5. Verify the product is in the cart
 
 */
 
@@ -15,5 +15,7 @@ We'll build a simple test that:
 2. Create Page Object
 
 Step 1: Create a simple homepage
+Step 2: Create a simple product page
+Step 3: Create a simple cart page
 
 */

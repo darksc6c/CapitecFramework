@@ -12,10 +12,14 @@ test('simple shopping flow with DemoBlaze', async ({ homePage, productPage, cart
     await homePage.clickLaptopsCategory();
     await page.waitForTimeout(2000);
 
+
+
+
     //Step 3: Click on a specific laptop
     const laptopToTest = 'Sony vaio i5';
     await homePage.clickProduct(laptopToTest);
-    await page.waitForTimeout(2000);
+
+
 
     //Step 4: Verify we're on the right product page
     //We get the product title text from the page
@@ -29,11 +33,12 @@ test('simple shopping flow with DemoBlaze', async ({ homePage, productPage, cart
     //Step 5: Add to the cart
     await productPage.addToCart();
     await page.screenshot({ path: 'AddToCart.png' });
-    await page.waitForTimeout(10000);
+
 
     //Step 6: Go to cart
     await homePage.goToCart();
-    await page.waitForTimeout(10000);
+    await page.waitForTimeout(2000);
+
     await page.screenshot({ path: 'cartScreenshot.png' });
 
     //Step 7: Verify product is in cart

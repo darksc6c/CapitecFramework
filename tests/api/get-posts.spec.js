@@ -27,6 +27,8 @@ import { title } from 'process';
 
 test('GET /posts returns a list of posts', async ({ request }) => {
 
+
+
     const response = await request.get('https://jsonplaceholder.typicode.com/posts/2');
     expect(response.status()).toBe(200); // I expect the status code from the response to be 200 - what does that mean? OK!
 

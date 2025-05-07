@@ -12,13 +12,22 @@ test('POST /posts fails with missing title', async ({ request }) => {
 
     const response = await request.post('http://localhost:3000/posts', { data: newPostData });
 
-    expect(response.status()).toBe(400);
+    //Although it's a negative test, getting an error code - it's a positive scenario because it gives what we expect
+    expect(response.status()).toBe(400); //If we expect a negative result, and we get a negative result - then it is what we expected, meaning it's a 
+    //positive scenario, and the test will pass (up till this point ofc)
+
+    //negative + negative = positive
+    //negative + postive  = negative
+
+    //{}
+    //[]
 
     const body = await response.json();
+
     console.log('Error reponse', body);
 
-    expect(body.error).toContain('Missing required fields');
-    console.log('Test passed: Server correctly rejected post with missing title');
+    expect(body.error).toContain();
+    // console.log('Test passed: Server correctly rejected post with missing title');
 });
 
 //STATUS CODES

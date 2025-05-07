@@ -1,22 +1,32 @@
 {
-    "loginTests": {
-        "validUser": {
-            "username": "standard_user",
-            "password": "secret_sauce"
+    "table": {
+        "one": {
+            "question_id": "standard_user", -- Unique ID
+            "question": "secret_sauce", -- Question
+            "category": "standard_user", -- Category
+            "item": [
+                "Sauce Labs Backpack",
+                "Sauce Labs Bike Light",
+                "Sauce Labs Bolt T-Shirt",
+                "Sauce Labs Fleece Jacket",
+                "Sauce Labs Onesie",
+                "Test.allTheThings() T-Shirt (Red)"
+            ],
+            "answer": "Sauce Labs Backpack"
         },
-        "lockedOutUser": {
+        "two": {
             "username": "locked_out_user",
             "password": "secret_sauce"
         },
-        "problemUser": {
+        "three": {
             "username": "problem_user",
             "password": "secret_sauce"
         },
-        "performanceGlitchUser": {
+        "four": {
             "username": "performance_glitch_user",
             "password": "secret_sauce"
         },
-        "invalidUser": {
+        "five": {
             "username": "invalid_user",
             "password": "wrong_password"
         }

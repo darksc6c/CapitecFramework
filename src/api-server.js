@@ -10,12 +10,12 @@ app.use(express.json());
 let posts = [
     { id: 1, userId: 1, title: 'First Post', body: 'This is the first post.', published: true, tags: ['news', 'tech'], metadata: { views: 150 } },
     { id: 2, userId: 2, title: 'Second Post', body: 'Another interesting article.', published: false, tags: ['lifestyle'], metadata: { views: 50 } },
-    { id: 3, userId: 1, title: 'Third Post about Tech', body: 'Diving deep into JavaScript.', published: true, tags: ['tech', 'code'], metadata: { views: 300 } },
+    //{ id: 3, userId: 1, title: 'Third Post about Tech', body: 'Diving deep into JavaScript.', published: true, tags: ['tech', 'code'], metadata: { views: 300 } },
     { id: 4, userId: 3, title: 'Travel Adventures', body: 'Exploring the mountains.', published: true, tags: ['travel', 'adventure'], metadata: { views: 220 } },
     { id: 5, userId: 2, title: 'Cooking Tips', body: 'Easy recipes for beginners.', published: false, tags: ['food', 'cooking'], metadata: { views: 95 } },
     // Problematic Data:
     { id: 6, userId: 99, title: 'Post by Non-existent User', body: 'This user ID does not exist in the users list.', published: true, tags: ['orphan'], metadata: {} },
-    { id: 7, userId: 1, title: 'Post with Invalid Tag Type', body: 'Tags should be an array.', published: true, tags: 'invalid-tag', metadata: { views: 10 } }, // tags should be array
+    //{ id: 7, userId: 1, title: 'Post with Invalid Tag Type', body: 'Tags should be an array.', published: true, tags: 'invalid-tag', metadata: { views: 10 } }, // tags should be array
     { id: 8, userId: 2, title: null, body: 'Post with null title', published: true, tags: ['data-issue'], metadata: { views: 5 } }, // title is null
     { id: 9, userId: 3, body: 'Post missing title', published: false, tags: ['incomplete'], metadata: {} }, // title field missing
 ];

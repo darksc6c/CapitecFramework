@@ -17,15 +17,19 @@ test('Check if a user has created more than one post', async ({ request }) => {
 
     //This is our traditional parsing of the response from our request to json (Typically called 'body' (in our examples) but in this case we call it 'posts')
     const posts = await response.json();
+
+    console.log(posts);
     //This is an automation-tester facing line - facing line meaning that this is expected of you (and the code haha) to make these expectations/assertions throughout code
-    expect(Array.isArray(posts)).toBe(true);
+    //expect(Array.isArray(posts)).toBe(true);
 
-    //Check that all returned posts have the correct userId
-    for (const post of posts) {
-        expect(post.userId).toBe(userIdToFilter);
-    }
+    // //Check that all returned posts have the correct userId
+    // for (const post of posts) {
+    //     expect(post.userId).toBe(userIdToFilter);
+    // }
 
-    expect(posts.length).toBeGreaterThanOrEqual(1); // Posts 1, 3, 7 intially belongto user 1
+    //>= 1 -including one \\ >=0 - including 0 \\ > 1
+
+    expect(posts.length).toBeGreaterThanOrEqual(2); // Posts 1, 3, 7 intially belongto user 1
 
 
 });

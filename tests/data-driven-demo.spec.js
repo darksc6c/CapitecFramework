@@ -36,7 +36,7 @@ for (const laptop of productData.laptops) {
         const isInCart = await cartPage.hasProduct(laptop.name);
         await page.waitForTimeout(1000);
         expect(isInCart).toBeTruthy();
-
+// hello 
     });
 }
 
